@@ -4,7 +4,13 @@ export class SundaramSieve {
 
 	constructor (max) {
 		this.sieve = defaultArray(Math.round(max/2), true);
-		this.sieve[0] = void 0;
+		this.sieve[0] = false;
+		Object.defineProperty(this.sieve, 'convert', {
+			enumerable: false,
+			value: function () {
+				return [2].concat(this.map((b, i) => b ? 2*i+1 : void 0).filter(i => i));
+			}
+		});
 	}
 
 	go () {
