@@ -1,0 +1,17 @@
+{
+  "name": "euler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rollup.config.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^1.1.1",
+    "rollup-plugin-babel": "^2.3.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
